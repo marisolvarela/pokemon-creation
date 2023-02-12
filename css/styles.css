@@ -2,3 +2,65 @@
 body{
     font-family: 'Roboto Mono', monospace;
 }
+
+form {
+    width: 200px;
+    margin: 20px auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+}
+
+.poke-card {
+    position: relative;
+    height: fit-content;
+    border: 1px solid #000;
+    border-radius: 4px;
+    max-width: 300px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.poke-card::before {
+    content: '';
+    background: radial-gradient(#000 33%, transparent 33%);
+    background-size:3px 3px;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+}
+
+.img-container {
+    position: relative;
+    width: 180px;
+    margin: 10px auto;
+}
+
+.poke-img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.poke-types div {
+    border: 1px dashed #000;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.poke-stats div{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+}
